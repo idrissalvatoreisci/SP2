@@ -8,30 +8,35 @@ public abstract class ACar implements Car
 
     // INTERFACE METODER
     // (OBS: disse metoder behøves ikke at blive OVERRIDET! Det er kun et krav, at de bliver brugt
+
+
+    // GETTERS
     public String getRegistrationNumber()
     {
-        return null;
+        return this.registrationNumber;
     }
 
-    public String getMake()
+    public String getMakeOfCar()
     {
-        return null;
+        return this.makeOfCar;
     }
 
-    public String getModel()
+    public String getModelOfCar()
     {
-        return null;
+        return this.modelOfCar;
     }
 
     public int getNumberofDoors()
     {
-        return 0;
+        return this.numberOfDoors;
     }
 
     public int getRegistrationFee()
     {
         return 0;
     }
+
+
 
 
 

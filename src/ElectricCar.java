@@ -1,13 +1,27 @@
 public class ElectricCar extends ACar
 {
     int batteryCapacity;
-    int maxRangePerKm;
+    int maxRangeinKm;
     String fuelType;
     int registrationFee;
     int whPrKm;
 
 
     // Class tilføjer nye metoder
+    public String getFuelType()
+    {
+        return  this.fuelType;
+    }
+
+    public int getRegistrationFee(int fee)
+    {
+        // calculation
+        int sum = 0;
+        double d = 91.25;
+        sum = fee / d;
+        return this.registrationFee;
+    }
+
     public int getBatteryCapacityKWh() // returns the battery capacity in kilowatt hours
     {
         return this.batteryCapacity;
@@ -15,7 +29,7 @@ public class ElectricCar extends ACar
 
     public int getMaxRangeKm() // returns the maximum range in kilometres.
     {
-        return this.maxRangePerKm;
+        return this.maxRangeinKm;
     }
 
     public int getWhPrkm() // returns the power consumption in watt hours per driven kilometre.
@@ -24,12 +38,12 @@ public class ElectricCar extends ACar
     }
 
     // CONSTRUCTOR
-    public ElectricCar(String fuelType, int reigstrationFee, int batteryCapacity, int maxRangePerKm, int whPrKm)
+    public ElectricCar(String fuelType, int reigstrationFee, int batteryCapacity, int maxRangeinKm, int whPrKm)
     {
         this.fuelType = fuelType;
         this.registrationFee = reigstrationFee;
         this.batteryCapacity = batteryCapacity;
-        this.maxRangePerKm = maxRangePerKm;
+        this.maxRangeinKm = maxRangeinKm;
         this.whPrKm = whPrKm;
 
     }

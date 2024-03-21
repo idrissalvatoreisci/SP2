@@ -20,22 +20,26 @@ public abstract class AFuelCar extends ACar
     }
 
     @Override
-    public String getMake() {
+    public String getMakeOfCar()
+    {
         return this.makeOfCar;
     }
 
     @Override
-    public String getModel() {
+    public String getModelOfCar()
+    {
         return this.modelOfCar;
     }
 
     @Override
-    public int getNumberofDoors() {
+    public int getNumberofDoors()
+    {
         return this.numberOfDoors;
     }
 
     @Override
-    public int getRegistrationFee() {
+    public int getRegistrationFee()
+    {
         return 0;
     }
 }
