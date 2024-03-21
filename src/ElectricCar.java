@@ -13,13 +13,10 @@ public class ElectricCar extends ACar
         return  this.fuelType;
     }
 
-    public int getRegistrationFee(int fee)
+    public int getRegistrationFee()
     {
         // calculation
-        int sum = 0;
-        double d = 91.25;
-        sum = fee / d;
-        return this.registrationFee;
+        return 0;
     }
 
     public int getBatteryCapacityKWh() // returns the battery capacity in kilowatt hours
