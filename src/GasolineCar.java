@@ -58,7 +58,7 @@ public class GasolineCar extends AFuelCar
     @Override
     public String toString()
     {
-        return ""; // returner bilen på en overskuelig måde
+        return "Fuel type of car is: "  + this.getFuelType(); // returner bilen på en overskuelig måde
     }
 
 }
