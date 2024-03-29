@@ -35,6 +35,8 @@ public class Main
         carInventory.addCarsToFleet(dieselCar2);
         //System.out.println(carInventory.getTotalRegistrationFeeForFleet());
 
+        OptionsMenu Menu = new OptionsMenu();
+
         // PRINT TOTAL CARS IN FLEET
         System.out.println("Total size of fleet: " + carInventory.getTotalCarsInFleet()
         + " \nTotal registration fee for fleet: " + carInventory.getTotalRegistrationFeeForFleet());
