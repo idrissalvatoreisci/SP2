@@ -64,12 +64,12 @@ public class DieselCar extends AFuelCar
     }
 
     // CLASS tilføjer her nye metoder
-    public boolean hasParticleFilter()
+    public String hasParticleFilter()
     {
         return this.particleFilter;
     }
 
-    public DieselCar(int kilometerPerLitre, String fuelType, int registrationFee, boolean particleFilter)
+    public DieselCar(int kilometerPerLitre, String fuelType, int registrationFee, String particleFilter)
     {
         super(kilometerPerLitre);
         this.fuelType = fuelType;

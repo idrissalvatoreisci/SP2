@@ -10,10 +10,7 @@ public class OptionsMenu
         System.out.println("\n 1: See full inventory of cars");
         System.out.println("\n 2: Add car to fleet");
         System.out.println("\n 3: See full car specifications");
-        System.out.println("\n 4: Create an electric car");
-        System.out.println("\n 5: Create a gasoline car");
-        System.out.println("\n 6: Create a diesel car");
-        System.out.println("\n\nchoose an option... \n\n");
+        System.out.println("\n 4: Create cars");
 
         // OPTION 4
         switch (userChoice)
@@ -25,7 +22,7 @@ public class OptionsMenu
             case "2":
                 FleetOfCars addToInventory = new FleetOfCars();
                 break;
-            case 3:
+            case "3":
                 break;
             case "4":
                 createCars();
@@ -116,7 +113,7 @@ public class OptionsMenu
 
         Scanner particleFilterInput = new Scanner(System.in);
         System.out.println("Does the car have a particle filter? [true/false]: ");
-        String particleFilterChoice = particleFilterInput.nextLine();
+        String particleFilterChoice = String.valueOf(Boolean.parseBoolean(particleFilterInput.nextLine()));
 
         DieselCar carOne = new DieselCar(kilometerPerLitreChoiceDiesel, fuelTypeDiesel, regFeeChoiceDiesel, particleFilterChoice);
         System.out.println();
@@ -126,6 +123,8 @@ public class OptionsMenu
     {
         Scanner input = new Scanner(System.in);
         String userChoice = input.nextLine();
+
+        System.out.println("Choose which type of car you want to create ");
 
         switch (userChoice)
         {
