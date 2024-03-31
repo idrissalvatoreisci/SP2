@@ -34,6 +34,11 @@ public class ElectricCar extends ACar
         return this.whPrKm;
     }
 
+    public void createElectricCar()
+    {
+
+    }
+
     // CONSTRUCTOR
     public ElectricCar(String fuelType, int reigstrationFee, int batteryCapacity, int maxRangeinKm, int whPrKm)
     {
