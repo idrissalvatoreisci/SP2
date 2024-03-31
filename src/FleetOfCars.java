@@ -5,7 +5,7 @@ public class FleetOfCars
     // GLOBAL SCOPE
     ArrayList<Car> fleetOfCars = new ArrayList<>();
 
-    public  void addCarsToFleet(Car car)
+    public void addCarsToFleet(Car car)
     {
         fleetOfCars.add(car);
     }
